@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Open Sans' ,sans serif;
+    font-weight: 300;
+}
+header {
+    background-color:#4a148c;
+    color:white;
+    text-align:center;
+    padding:5px;     
+
+}
+nav {
+    background-color:#f1f1f1;
+    height:1000px;
+    width:25%;
+    float:left;
+    padding:5px; 
+    text-align: center;
+
+}
+nav .tab {
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    display:inline-block;
+    width: 20%;
+    height: 20%;
+    padding: 5% 0 5% 0;
+    color:#50bcb6;
+
+}
+ .tab:hover {
+ 
+ border: 1px solid #4a148c ;
+ width: 22%;
+ height: 22%;
+ z-index: 10px;
+ color: #4a148c ;
+ }
+
+    
+#timer {
+    text-align: center;
+    color: #666;
+}
+section {
+    width:60%;
+    float:right;
+    padding:10px;  
+    display: inline-block;      
+}
+section #ques {
+    margin: 1%;
+    line-height: 40px;
+    color: #555;
+}
+.imgset {
+    width: 50%;
+    margin: 10%;
+}
+section #ans {
+    font-size: 18px;
+    line-height: 40px;
+
+}
+#ans ul {
+    list-style-type: none;
+}
+
+#list {
+    text-align: center;
+}
+.btn
+    {
+        display: inline-block;
+        color:#555;
+        border:2px solid rgb(244, 144, 32);
+        width: 25%;
+        height:10%;
+        margin-right:5% ;
+        font: 28px/58px "Ubuntu", sans-serif;
+        text-align:center;
+        background-color:white; 
+        border-radius: 6px;
+
+    }
+.btn:hover
+    {   
+        background-color:#73AD21;
+        color: white;
+        background-color:rgb(245, 145, 32);
+        width: 26%;
+        height: 11%;
+        box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.2);
+    }
+ #b3 {
+    width: 56%;
+    float: left;
+    color: white;
+    margin-right: 0px;
+    background-color:#22b1dd;
+    border-radius: 0px;
+    border:0px solid rgb(244, 144, 32);
+    box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.2);
+    
+}
+footer {
+    background-color:#009688;
+    color:white;
+    clear:both;
+    text-align:right;
+
+    min-height:40px;
+    padding:5px;     
+    padding-top: 20px;    
+}
+
+
+ /*For Tablets*/
+
+@media screen and (min-width: 701px) and  (max-width: 1050px)  {
+    nav {
+        float:left;
+        width: 40%;
+        height: 1000px;
+        padding: 0px;
+
+    }
+    section {
+        float: right;
+        font-size: 1em;
+        width: 45%;
+        padding-right: 10%;
+        text-align: center;
+    }
+    .imgset {
+        width: 80%;
+       
+    }
+    #ans ul {
+        text-align: center;
+        padding: 10% 20% 20% 20%;
+    }
+    .btn {
+        
+        width: 45%;
+        float: left;
+        margin-bottom: 20px;
+
+    }
+    .btn:hover { 
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    #b3 {
+        float:none;
+        width: 100%;
+    }
+    footer {
+        text-align: center;
+    }
+}
+
+/* For Mobiles*/
+
+@media screen and (max-width: 700px) {
+    nav {
+        float:left;
+        width: 100%;
+        height: 100%;
+    }
+
+    section {
+        float: right;
+        font-size: 1em;
+        padding: 20%;
+        text-align: center;
+    }
+    .imgset {
+        width: 100%;
+       
+    }
+    #ans ul {
+        text-align: center;
+        padding: 10% 20% 20% 20%;
+    }
+    .btn {
+        display: list-item;
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+    .btn:hover {
+        display: list-item;
+        width: 100%;
+         margin-bottom: 20px;
+    }
+    #b3 {
+        float:none;
+        width: 100%;
+    }
+    footer {
+        text-align: center;
+    }
+}
